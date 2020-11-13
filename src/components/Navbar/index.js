@@ -13,7 +13,6 @@ import {
 } from "@material-ui/core";
 
 import MenuIcon from "@material-ui/icons/Menu";
-import AccountCircle from "@material-ui/icons/AccountCircle";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -48,11 +47,11 @@ export default function MenuAppBar() {
             Portfolio
           </Typography>
           <Hidden only={["xs", "sm"]}>
-            <Button color="inherit" component={Link} to={"/about"}>
+            <Button color="inherit" component={Link} to={"/"}>
               About
             </Button>
-            <Button color="inherit" component={Link} to={"/projects"}>
-              Projects
+            <Button color="inherit" component={Link} to={"/portfolio"}>
+              Portfolio
             </Button>
             <Button color="inherit" component={Link} to={"/contact"}>
               Contact
@@ -90,13 +89,14 @@ export default function MenuAppBar() {
               onClose={handleClose}
             >
               <MenuItem component={Link} to={"/"} onClick={handleClose}>
-                Home
-              </MenuItem>
-              <MenuItem component={Link} to={"/about"} onClick={handleClose}>
                 About
               </MenuItem>
-              <MenuItem component={Link} to={"/projects"} onClick={handleClose}>
-                Projects
+              <MenuItem
+                component={Link}
+                to={"/portfolio"}
+                onClick={handleClose}
+              >
+                Portfolio
               </MenuItem>
               <MenuItem component={Link} to={"/contact"} onClick={handleClose}>
                 Contact
