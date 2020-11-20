@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { teal, deepOrange } from "@material-ui/core/colors";
 import { CssBaseline } from "@material-ui/core";
 
 import Navbar from "./components/Navbar";
@@ -24,7 +23,6 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Router basename={process.env.PUBLIC_URL}>
-      <Router>
         <Navbar />
         <Switch>
           <Route path={"/portfolio"} component={Portfolio} />
