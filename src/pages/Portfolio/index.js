@@ -65,15 +65,14 @@ export default function Portfolio() {
           <Container className={classes.text}>
             <h2>Netflix-clone</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              officiis assumenda nostrum magnam veritatis, quis impedit sunt id
-              quaerat pariatur similique harum enim nobis quisquam odio aut
-              accusamus animi repellat.
+              A Netflix clone built with react. Makes an API call to render
+              movies and shows by category. Also, plays that movie/show's
+              corresponding trailer on a click. Deployed with firebase.
             </p>
           </Container>
         </Grid>
         <Grid item md={6} className={classes.mt}>
-          <a href="" target="_blank">
+          <a href="https://netflix-clone-23b92.web.app/" target="_blank">
             <img
               className={classes.img}
               src={netflix}
@@ -96,10 +95,9 @@ export default function Portfolio() {
           <Container className={classes.text}>
             <h2>Discord-clone</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              officiis assumenda nostrum magnam veritatis, quis impedit sunt id
-              quaerat pariatur similique harum enim nobis quisquam odio aut
-              accusamus animi repellat.
+              A Discord clone built with react. Demonstrates basic Discord
+              functionality, including google login, creating a channel and
+              sending messages.
             </p>
           </Container>
         </Grid>
@@ -107,10 +105,10 @@ export default function Portfolio() {
           <Container className={classes.text}>
             <h2>tkrSearch</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              officiis assumenda nostrum magnam veritatis, quis impedit sunt id
-              quaerat pariatur similique harum enim nobis quisquam odio aut
-              accusamus animi repellat.
+              tkrSearch is a simple stock and cryptocurrency search application.
+              The user can search by ticker symbols and is presented with useful
+              information such as current price, previous close, 52 week high
+              and 52 week low.
             </p>
           </Container>
         </Grid>
