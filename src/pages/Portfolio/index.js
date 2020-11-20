@@ -1,12 +1,11 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import { Container } from "@material-ui/core";
 import ironDojo from "../../images/ironDojo-ss.png";
 import tkrSearch from "../../images/tkrSearch-ss.png";
 import discord from "../../images/discord-ss.png";
-import { Link } from "react-router-dom";
+import netflix from "../../images/netflix-ss.png";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -14,14 +13,8 @@ const useStyles = makeStyles(theme => ({
     textAlign: "center",
     marginTop: theme.spacing(10),
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-  },
-  projectsContainer: {
-    display: "flex",
-    justifyContent: "center",
+  mt: {
+    marginTop: theme.spacing(4),
   },
   img: {
     objectFit: "contain",
@@ -36,7 +29,8 @@ const useStyles = makeStyles(theme => ({
     cursor: "pointer",
   },
   text: {
-    paddingTop: theme.spacing(6),
+    marginTop: theme.spacing(4),
+    paddingTop: theme.spacing(8),
   },
 }));
 
@@ -47,7 +41,7 @@ export default function Portfolio() {
     <Container className={classes.root}>
       {/* <h1>Portfolio</h1> */}
       <Grid container spacing={3}>
-        <Grid item md={6}>
+        <Grid item md={6} className={classes.mt}>
           <a href="https://the-iron-dojo.herokuapp.com/" target="_blank">
             <img
               className={classes.img}
@@ -69,7 +63,7 @@ export default function Portfolio() {
         </Grid>
         <Grid item md={6}>
           <Container className={classes.text}>
-            <h2>Discord-clone</h2>
+            <h2>Netflix-clone</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
               officiis assumenda nostrum magnam veritatis, quis impedit sunt id
@@ -78,7 +72,18 @@ export default function Portfolio() {
             </p>
           </Container>
         </Grid>
-        <Grid item md={6}>
+        <Grid item md={6} className={classes.mt}>
+          <a href="" target="_blank">
+            <img
+              className={classes.img}
+              src={netflix}
+              alt={"Discord-clone Screenshot"}
+            />
+          </a>
+        </Grid>
+      </Grid>
+      <Grid container spacing={3}>
+        <Grid item md={6} className={classes.mt}>
           <a href="https://discord-47ed9.web.app/" target="_blank">
             <img
               className={classes.img}
@@ -87,18 +92,9 @@ export default function Portfolio() {
             />
           </a>
         </Grid>
-      </Grid>
-      <Grid container spacing={3}>
-        <Grid item md={6}>
-          <img
-            className={classes.img}
-            src={ironDojo}
-            alt={"Iron Dojo Screenshot"}
-          />
-        </Grid>
         <Grid item md={6}>
           <Container className={classes.text}>
-            <h2>Iron Dojo</h2>
+            <h2>Discord-clone</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
               officiis assumenda nostrum magnam veritatis, quis impedit sunt id
@@ -118,7 +114,7 @@ export default function Portfolio() {
             </p>
           </Container>
         </Grid>
-        <Grid item md={6}>
+        <Grid item md={6} className={classes.mt}>
           <a
             href="https://bhagatabhijeet.github.io/tkrsearch/index.html"
             target="_blank"

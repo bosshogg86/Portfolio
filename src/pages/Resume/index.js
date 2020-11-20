@@ -6,6 +6,7 @@ const useStyles = makeStyles(theme => ({
     textAlign: "center",
     marginTop: theme.spacing(10),
   },
+  pad: { padding: theme.spacing(4) },
 }));
 
 const Resume = () => {
@@ -14,9 +15,9 @@ const Resume = () => {
     <div>
       <Container className={classes.container}>
         <Paper>
-          <Container>
+          <Container className={classes.pad}>
             <h1>Resume</h1>
-            <h2>Under Construction</h2>
+            <h2>Coming Soon!</h2>
           </Container>
         </Paper>
       </Container>
