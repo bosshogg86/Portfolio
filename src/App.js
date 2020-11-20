@@ -23,7 +23,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      {/* <Router basename={process.env.PUBLIC_URL}> */}
+      <Router basename={process.env.PUBLIC_URL}>
       <Router>
         <Navbar />
         <Switch>
