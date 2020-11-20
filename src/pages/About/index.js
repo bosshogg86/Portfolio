@@ -1,41 +1,35 @@
 import React from "react";
-import { Container, Grow } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import headshot from "../../images/me.jpg";
 
 const useStyles = makeStyles(theme => ({
+  container: {
+    marginTop: theme.spacing(8),
+  },
   textStyle: {
-    // position: "absolute",
     textAlign: "center",
-    // top: "50%",
-    // left: 0,
-    // right: 0,
-    // bottom: 0,
-    // color: "white",
   },
   image: {
-    width: "50%",
+    width: "40%",
     height: "auto",
     display: "flex",
     margin: "auto",
     marginBottom: "2rem",
     borderRadius: "50%",
+    border: "1px solid #000",
   },
 }));
 const Home = () => {
-  const { textStyle, image } = useStyles();
+  const classes = useStyles();
   return (
-    // <>
-    <Grow in={true} timeout={1000}>
-      <Container>
-        <h1 className={textStyle}>Hi, I'm Jeff Hogg.</h1>
-        <img className={image} src={headshot} alt="Head shot" />
-        <h3 className={textStyle}>
-          I'm a full-stack web-developer. Check out some of my projects!
-        </h3>
-      </Container>
-    </Grow>
-    // </>
+    <Container className={classes.container}>
+      <h1 className={classes.textStyle}>Hi, I'm Jeff Hogg.</h1>
+      <img className={classes.image} src={headshot} alt="Head shot" />
+      <h3 className={classes.textStyle}>
+        I'm a full-stack developer. Check out some of my projects!
+      </h3>
+    </Container>
   );
 };
 

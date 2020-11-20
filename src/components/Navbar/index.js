@@ -10,19 +10,28 @@ import {
   MenuItem,
   Menu,
   Hidden,
+  Avatar,
 } from "@material-ui/core";
-
 import MenuIcon from "@material-ui/icons/Menu";
+import img from "../../images/me.jpg";
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    // marginBottom: theme.spacing(5),
   },
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  title: {
+  avatarContainer: {
     flexGrow: 1,
+  },
+  avatar: {
+    transition: "transform 200ms",
+    "&:hover": {
+      transform: "scale(1.09)",
+    },
+    cursor: "pointer",
   },
 }));
 
@@ -43,9 +52,15 @@ export default function MenuAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" className={classes.title}>
-            Portfolio
-          </Typography>
+          <div className={classes.avatarContainer}>
+            <Avatar
+              className={classes.avatar}
+              alt="Jeff Hogg"
+              src={img}
+              component={Link}
+              to={"/"}
+            />
+          </div>
           <Hidden only={["xs", "sm"]}>
             <Button color="inherit" component={Link} to={"/"}>
               About

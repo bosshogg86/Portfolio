@@ -1,4 +1,3 @@
-import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { teal, deepOrange } from "@material-ui/core/colors";
@@ -14,8 +13,9 @@ import Resume from "./pages/Resume";
 const theme = createMuiTheme({
   palette: {
     type: "dark",
-    primary: deepOrange,
-    secondary: teal,
+    primary: {
+      main: "#212121",
+    },
   },
 });
 
