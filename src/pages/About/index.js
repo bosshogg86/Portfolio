@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import headshot from "../../images/me.jpg";
+import headshot from "../../assets/me.jpg";
 
 const useStyles = makeStyles(theme => ({
   container: {

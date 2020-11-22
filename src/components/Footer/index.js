@@ -22,17 +22,17 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function LabelBottomNavigation() {
-  const { footer, icon, button } = useStyles();
+  const { footer, icon} = useStyles();
 
   return (
     <div className={footer}>
-      <a href="//www.linkedin.com/in/jeffhogg/" target="_blank">
+      <a href="//www.linkedin.com/in/jeffhogg/" target="_blank" rel="noreferrer">
         <LinkedIn className={icon} />
       </a>
-      <a href="//github.com/bosshogg86" target="_blank">
+      <a href="//github.com/bosshogg86" target="_blank" rel="noreferrer">
         <GitHub className={icon} />
       </a>
-      <a href="mailto: jeffhogg86@gmail.com" target="_blank">
+      <a href="mailto: jeffhogg86@gmail.com" target="_blank" rel="noreferrer">
         <Email className={icon} />
       </a>
     </div>

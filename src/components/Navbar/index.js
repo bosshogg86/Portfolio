@@ -4,7 +4,6 @@ import {
   makeStyles,
   AppBar,
   Toolbar,
-  Typography,
   Button,
   IconButton,
   MenuItem,
@@ -13,7 +12,7 @@ import {
   Avatar,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import img from "../../images/me.jpg";
+import img from "../../assets/me.jpg";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -62,9 +61,7 @@ export default function MenuAppBar() {
             />
           </div>
           <Hidden only={["xs", "sm"]}>
-            <Button color="inherit" component={Link} to={"/"}>
-              About
-            </Button>
+            
             <Button color="inherit" component={Link} to={"/portfolio"}>
               Portfolio
             </Button>
@@ -103,9 +100,7 @@ export default function MenuAppBar() {
               open={open}
               onClose={handleClose}
             >
-              <MenuItem component={Link} to={"/"} onClick={handleClose}>
-                About
-              </MenuItem>
+           
               <MenuItem
                 component={Link}
                 to={"/portfolio"}

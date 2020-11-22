@@ -8,6 +8,8 @@ A portfolio built with react. Check out some examples of projects I've worked on
 
 - React
 - Material-UI
+- react-pdf
+- emailjs
 
 ## Deployed
 

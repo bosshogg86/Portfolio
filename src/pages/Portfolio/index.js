@@ -2,10 +2,10 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import { Container } from "@material-ui/core";
-import ironDojo from "../../images/ironDojo-ss.png";
-import tkrSearch from "../../images/tkrSearch-ss.png";
-import discord from "../../images/discord-ss.png";
-import netflix from "../../images/netflix-ss.png";
+import ironDojo from "../../assets/ironDojo-ss.png";
+import tkrSearch from "../../assets/tkrSearch-ss.png";
+import discord from "../../assets/discord-ss.png";
+import netflix from "../../assets/netflix-ss.png";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -42,7 +42,7 @@ export default function Portfolio() {
       {/* <h1>Portfolio</h1> */}
       <Grid container spacing={3}>
         <Grid item md={6} className={classes.mt}>
-          <a href="https://the-iron-dojo.herokuapp.com/" target="_blank">
+          <a href="https://the-iron-dojo.herokuapp.com/" target="_blank" rel="noreferrer">
             <img
               className={classes.img}
               src={ironDojo}
@@ -72,7 +72,7 @@ export default function Portfolio() {
           </Container>
         </Grid>
         <Grid item md={6} className={classes.mt}>
-          <a href="https://netflix-clone-23b92.web.app/" target="_blank">
+          <a href="https://netflix-clone-23b92.web.app/" target="_blank" rel="noreferrer">
             <img
               className={classes.img}
               src={netflix}
@@ -83,7 +83,7 @@ export default function Portfolio() {
       </Grid>
       <Grid container spacing={3}>
         <Grid item md={6} className={classes.mt}>
-          <a href="https://discord-47ed9.web.app/" target="_blank">
+          <a href="https://discord-47ed9.web.app/" target="_blank" rel="noreferrer">
             <img
               className={classes.img}
               src={discord}
@@ -115,7 +115,7 @@ export default function Portfolio() {
         <Grid item md={6} className={classes.mt}>
           <a
             href="https://bhagatabhijeet.github.io/tkrsearch/index.html"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             <img
               className={classes.img}
