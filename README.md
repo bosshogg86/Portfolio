@@ -17,4 +17,4 @@ A portfolio built with react. Check out some examples of projects I've worked on
 
 [GitHub Repo](https://github.com/bosshogg86/portfolio)
 
-![Screenshot](src/images/portfolio-ss.png)
+![Screenshot](src/assets/portfolio-ss.png)
