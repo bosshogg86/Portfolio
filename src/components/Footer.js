@@ -2,12 +2,12 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { GitHub, LinkedIn, Email } from "@material-ui/icons";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   footer: {
     display: "flex",
     justifyContent: "center",
 
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(1),
   },
   icon: {
     margin: "1rem",
@@ -22,11 +22,15 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function LabelBottomNavigation() {
-  const { footer, icon} = useStyles();
+  const { footer, icon } = useStyles();
 
   return (
     <div className={footer}>
-      <a href="//www.linkedin.com/in/jeffhogg/" target="_blank" rel="noreferrer">
+      <a
+        href="//www.linkedin.com/in/jeffhogg/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <LinkedIn className={icon} />
       </a>
       <a href="//github.com/bosshogg86" target="_blank" rel="noreferrer">

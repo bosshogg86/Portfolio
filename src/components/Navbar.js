@@ -12,9 +12,9 @@ import {
   Avatar,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import img from "../../assets/me.jpg";
+import img from "../assets/me.jpg";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     // marginBottom: theme.spacing(5),
@@ -39,7 +39,7 @@ export default function MenuAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
 
-  const handleMenu = event => {
+  const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -61,8 +61,7 @@ export default function MenuAppBar() {
             />
           </div>
           <Hidden only={["xs", "sm"]}>
-            
-            <Button color="inherit" component={Link} to={"/portfolio"}>
+            <Button color="inherit" component={Link} to={"/projects"}>
               Portfolio
             </Button>
             <Button color="inherit" component={Link} to={"/contact"}>
@@ -100,12 +99,7 @@ export default function MenuAppBar() {
               open={open}
               onClose={handleClose}
             >
-           
-              <MenuItem
-                component={Link}
-                to={"/portfolio"}
-                onClick={handleClose}
-              >
+              <MenuItem component={Link} to={"/projects"} onClick={handleClose}>
                 Portfolio
               </MenuItem>
               <MenuItem component={Link} to={"/contact"} onClick={handleClose}>

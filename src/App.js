@@ -1,13 +1,13 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { CssBaseline } from "@material-ui/core";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
-import Resume from "./pages/Resume";
+import Landing from "./components/Landing";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 
 const theme = createMuiTheme({
   palette: {
@@ -22,13 +22,13 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Navbar />
         <Switch>
-          <Route path={"/portfolio"} component={Portfolio} />
+          <Route path={"/projects"} component={Portfolio} />
           <Route path={"/contact"} component={Contact} />
           <Route path={"/resume"} component={Resume} />
-          <Route exact path={"/"} component={About} />
+          <Route exact path={"/"} component={Landing} />
         </Switch>
         <Footer />
       </Router>

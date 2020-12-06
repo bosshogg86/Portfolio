@@ -1,13 +1,14 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import { Container } from "@material-ui/core";
-import ironDojo from "../../assets/ironDojo-ss.png";
-import tkrSearch from "../../assets/tkrSearch-ss.png";
-import discord from "../../assets/discord-ss.png";
-import netflix from "../../assets/netflix-ss.png";
+import { Button, Container } from "@material-ui/core";
+import ironDojo from "../assets/ironDojo-ss.png";
+import tkrSearch from "../assets/tkrSearch-ss.png";
+import discord from "../assets/discord-ss.png";
+import netflix from "../assets/netflix-ss.png";
+import { Link } from "react-router-dom";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     textAlign: "center",
@@ -32,6 +33,13 @@ const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(4),
     paddingTop: theme.spacing(8),
   },
+  btn: {
+    marginTop: theme.spacing(4),
+    transition: "transform 200ms",
+    "&:hover": {
+      transform: "scale(1.08)",
+    },
+  },
 }));
 
 export default function Portfolio() {
@@ -42,7 +50,11 @@ export default function Portfolio() {
       {/* <h1>Portfolio</h1> */}
       <Grid container spacing={3}>
         <Grid item md={6} className={classes.mt}>
-          <a href="https://the-iron-dojo.herokuapp.com/" target="_blank" rel="noreferrer">
+          <a
+            href="https://the-iron-dojo.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className={classes.img}
               src={ironDojo}
@@ -72,7 +84,11 @@ export default function Portfolio() {
           </Container>
         </Grid>
         <Grid item md={6} className={classes.mt}>
-          <a href="https://netflix-clone-23b92.web.app/" target="_blank" rel="noreferrer">
+          <a
+            href="https://netflix-clone-23b92.web.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className={classes.img}
               src={netflix}
@@ -83,7 +99,11 @@ export default function Portfolio() {
       </Grid>
       <Grid container spacing={3}>
         <Grid item md={6} className={classes.mt}>
-          <a href="https://discord-47ed9.web.app/" target="_blank" rel="noreferrer">
+          <a
+            href="https://discord-47ed9.web.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className={classes.img}
               src={discord}
@@ -115,7 +135,8 @@ export default function Portfolio() {
         <Grid item md={6} className={classes.mt}>
           <a
             href="https://bhagatabhijeet.github.io/tkrsearch/index.html"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
             <img
               className={classes.img}
@@ -125,6 +146,14 @@ export default function Portfolio() {
           </a>
         </Grid>
       </Grid>
+      <Button
+        className={classes.btn}
+        variant="outlined"
+        component={Link}
+        to={"/contact"}
+      >
+        Contact Me
+      </Button>
     </Container>
   );
 }
