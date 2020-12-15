@@ -1,33 +1,33 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
-import { Button, Container } from "@material-ui/core";
-import ironDojo from "../assets/ironDojo-ss.png";
-import tkrSearch from "../assets/tkrSearch-ss.png";
-import discord from "../assets/discord-ss.png";
-import netflix from "../assets/netflix-ss.png";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import { Button, Container } from '@material-ui/core';
+import ironDojo from '../assets/ironDojo-ss.png';
+import tkrSearch from '../assets/tkrSearch-ss.png';
+import discord from '../assets/discord-ss.png';
+import netflix from '../assets/netflix-ss.png';
+import { Link } from 'react-router-dom';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    textAlign: "center",
+    textAlign: 'center',
     marginTop: theme.spacing(10),
   },
   mt: {
     marginTop: theme.spacing(4),
   },
   img: {
-    objectFit: "contain",
-    maxHeight: "25rem",
-    width: "100%",
-    border: "1px solid #000",
-    borderRadius: "8px",
-    transition: "transform 200ms",
-    "&:hover": {
-      transform: "scale(1.08)",
+    objectFit: 'contain',
+    maxHeight: '25rem',
+    width: '100%',
+    border: '1px solid #000',
+    borderRadius: '8px',
+    transition: 'transform 200ms',
+    '&:hover': {
+      transform: 'scale(1.08)',
     },
-    cursor: "pointer",
+    cursor: 'pointer',
   },
   text: {
     marginTop: theme.spacing(4),
@@ -35,9 +35,9 @@ const useStyles = makeStyles((theme) => ({
   },
   btn: {
     marginTop: theme.spacing(4),
-    transition: "transform 200ms",
-    "&:hover": {
-      transform: "scale(1.08)",
+    transition: 'transform 200ms',
+    '&:hover': {
+      transform: 'scale(1.08)',
     },
   },
 }));
@@ -58,7 +58,7 @@ export default function Portfolio() {
             <img
               className={classes.img}
               src={ironDojo}
-              alt={"Iron Dojo Screenshot"}
+              alt={'Iron Dojo Screenshot'}
             />
           </a>
         </Grid>
@@ -68,9 +68,23 @@ export default function Portfolio() {
             <p>
               A react based web application built to track your strength and
               conditioning sessions over time. Create and log your workouts,
-              then view your progress displayed in a chart. Come to the Iron
-              Dojo for maximum gains!
+              then view your progress displayed in a chart.
             </p>
+            <a
+              href="https://github.com/bosshogg86/ironDojo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub Repo - https://github.com/bosshogg86/ironDojo
+            </a>
+            <br></br>
+            <a
+              href="https://the-iron-dojo.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Deployed Application - https://the-iron-dojo.herokuapp.com/
+            </a>
           </Container>
         </Grid>
         <Grid item md={6}>
@@ -81,6 +95,21 @@ export default function Portfolio() {
               movies and shows by category. Also, plays that movie/show's
               corresponding trailer on a click. Deployed with firebase.
             </p>
+            <a
+              href="https://github.com/bosshogg86/netflix-clone"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub Repo - https://github.com/bosshogg86/netflix-clone
+            </a>
+            <br></br>
+            <a
+              href="https://netflix-clone-23b92.web.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Deployed Application - https://netflix-clone-23b92.web.app/
+            </a>
           </Container>
         </Grid>
         <Grid item md={6} className={classes.mt}>
@@ -92,7 +121,7 @@ export default function Portfolio() {
             <img
               className={classes.img}
               src={netflix}
-              alt={"Discord-clone Screenshot"}
+              alt={'Discord-clone Screenshot'}
             />
           </a>
         </Grid>
@@ -107,7 +136,7 @@ export default function Portfolio() {
             <img
               className={classes.img}
               src={discord}
-              alt={"Discord-clone Screenshot"}
+              alt={'Discord-clone Screenshot'}
             />
           </a>
         </Grid>
@@ -119,6 +148,21 @@ export default function Portfolio() {
               functionality, including google login, creating a channel and
               sending messages.
             </p>
+            <a
+              href="https://github.com/bosshogg86/discord-clone"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub Repo - https://github.com/bosshogg86/discord-clone
+            </a>
+            <br></br>
+            <a
+              href="https://discord-47ed9.web.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Deployed Application - https://discord-47ed9.web.app/
+            </a>
           </Container>
         </Grid>
         <Grid item md={6}>
@@ -130,6 +174,22 @@ export default function Portfolio() {
               information such as current price, previous close, 52 week high
               and 52 week low.
             </p>
+            <a
+              href="https://github.com/bosshogg86/tkrsearch"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub Repo - https://github.com/bosshogg86/tkrsearch
+            </a>
+            <br></br>
+            <a
+              href="https://bhagatabhijeet.github.io/tkrsearch/index.html"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Deployed Application -
+              https://bhagatabhijeet.github.io/tkrsearch/index.html
+            </a>
           </Container>
         </Grid>
         <Grid item md={6} className={classes.mt}>
@@ -141,7 +201,7 @@ export default function Portfolio() {
             <img
               className={classes.img}
               src={tkrSearch}
-              alt={"tkrSearch Screenshot"}
+              alt={'tkrSearch Screenshot'}
             />
           </a>
         </Grid>
@@ -150,7 +210,7 @@ export default function Portfolio() {
         className={classes.btn}
         variant="outlined"
         component={Link}
-        to={"/contact"}
+        to={'/contact'}
       >
         Contact Me
       </Button>

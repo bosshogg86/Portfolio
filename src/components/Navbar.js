@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   makeStyles,
   AppBar,
@@ -10,11 +10,11 @@ import {
   Menu,
   Hidden,
   Avatar,
-} from "@material-ui/core";
-import MenuIcon from "@material-ui/icons/Menu";
-import img from "../assets/me.jpg";
+} from '@material-ui/core';
+import MenuIcon from '@material-ui/icons/Menu';
+import img from '../assets/me.jpg';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
     // marginBottom: theme.spacing(5),
@@ -26,11 +26,11 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   avatar: {
-    transition: "transform 200ms",
-    "&:hover": {
-      transform: "scale(1.09)",
+    transition: 'transform 200ms',
+    '&:hover': {
+      transform: 'scale(1.09)',
     },
-    cursor: "pointer",
+    cursor: 'pointer',
   },
 }));
 
@@ -39,7 +39,7 @@ export default function MenuAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
 
-  const handleMenu = (event) => {
+  const handleMenu = event => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -57,22 +57,25 @@ export default function MenuAppBar() {
               alt="Jeff Hogg"
               src={img}
               component={Link}
-              to={"/"}
+              to={'/'}
             />
           </div>
-          <Hidden only={["xs", "sm"]}>
-            <Button color="inherit" component={Link} to={"/projects"}>
+          <Hidden only={['xs', 'sm']}>
+            <Button color="inherit" component={Link} to={'/'}>
+              About
+            </Button>
+            <Button color="inherit" component={Link} to={'/projects'}>
               Portfolio
             </Button>
-            <Button color="inherit" component={Link} to={"/contact"}>
+            <Button color="inherit" component={Link} to={'/contact'}>
               Contact
             </Button>
-            <Button color="inherit" component={Link} to={"/resume"}>
+            <Button color="inherit" component={Link} to={'/resume'}>
               Resume
             </Button>
           </Hidden>
           <div>
-            <Hidden only={["md", "lg", "xl"]}>
+            <Hidden only={['md', 'lg', 'xl']}>
               <IconButton
                 aria-controls="menu"
                 aria-haspopup="true"
@@ -88,24 +91,27 @@ export default function MenuAppBar() {
               id="menu-appbar"
               anchorEl={anchorEl}
               anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
+                vertical: 'top',
+                horizontal: 'right',
               }}
               keepMounted
               transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
+                vertical: 'top',
+                horizontal: 'right',
               }}
               open={open}
               onClose={handleClose}
             >
-              <MenuItem component={Link} to={"/projects"} onClick={handleClose}>
+              <MenuItem component={Link} to={'/'} onClick={handleClose}>
+                About
+              </MenuItem>
+              <MenuItem component={Link} to={'/projects'} onClick={handleClose}>
                 Portfolio
               </MenuItem>
-              <MenuItem component={Link} to={"/contact"} onClick={handleClose}>
+              <MenuItem component={Link} to={'/contact'} onClick={handleClose}>
                 Contact
               </MenuItem>
-              <MenuItem component={Link} to={"/resume"} onClick={handleClose}>
+              <MenuItem component={Link} to={'/resume'} onClick={handleClose}>
                 Resume
               </MenuItem>
             </Menu>

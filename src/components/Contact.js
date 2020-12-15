@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   Button,
   Container,
@@ -6,42 +6,51 @@ import {
   Paper,
   TextField,
   Snackbar,
-} from "@material-ui/core";
-import MuiAlert from "@material-ui/lab/Alert";
-import emailjs from "emailjs-com";
+  Typography,
+} from '@material-ui/core';
+import MuiAlert from '@material-ui/lab/Alert';
+import emailjs from 'emailjs-com';
+import { EmailRounded, GitHub, LinkedIn } from '@material-ui/icons';
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="outlined" {...props} />;
 }
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   container: {
-    textAlign: "center",
+    textAlign: 'center',
     marginTop: theme.spacing(10),
   },
   messages: {
-    display: "flex",
-    flexDirection: "column",
-    paddingTop: theme.spacing(2),
+    display: 'flex',
+    flexDirection: 'column',
     paddingBottom: theme.spacing(4),
   },
   input: {
     margin: theme.spacing(2),
   },
   btn: {
-    marginTop: theme.spacing(2),
+    margin: theme.spacing(1),
+    transition: 'transform 200ms',
+    '&:hover': {
+      transform: 'scale(1.1)',
+      color: '#212121',
+    },
+  },
+  icon: {
+    marginLeft: 10,
+  },
+  title: {
+    paddingTop: theme.spacing(2),
   },
 }));
 
 const Contact = () => {
   const classes = useStyles();
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [message, setMessage] = useState("");
   const [open, setOpen] = useState(false);
 
   const handleClose = (event, reason) => {
-    if (reason === "clickaway") {
+    if (reason === 'clickaway') {
       return;
     }
 
@@ -53,20 +62,20 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_gz2q92n",
-        "contact_form",
+        'service_gz2q92n',
+        'contact_form',
         e.target,
-        "user_152jYVHOy4K9Du2ETYH3T"
+        'user_152jYVHOy4K9Du2ETYH3T'
       )
       .then(
-        (result) => {
+        result => {
           console.log(result.text);
-          document.getElementById("user_name").value = "";
-          document.getElementById("user_email").value = "";
-          document.getElementById("message").value = "";
+          document.getElementById('user_name').value = '';
+          document.getElementById('user_email').value = '';
+          document.getElementById('message').value = '';
           setOpen(true);
         },
-        (error) => {
+        error => {
           console.log(error.text);
         }
       );
@@ -74,6 +83,42 @@ const Contact = () => {
   return (
     <Container className={classes.container}>
       <Paper>
+        <Typography className={classes.title}>
+          <h2>Contact Me</h2>
+        </Typography>
+        <Button
+          href="http://www.linkedin.com/in/jeffhogg/"
+          target="_blank"
+          rel="noreferrer"
+          variant="outlined"
+          className={classes.btn}
+        >
+          LinkedIn
+          <LinkedIn className={classes.icon} />
+        </Button>
+        <Button
+          href="mailto: jeffhogg86@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+          variant="outlined"
+          className={classes.btn}
+        >
+          GitHub
+          <GitHub className={classes.icon} />
+        </Button>
+        <Button
+          href="mailto: jeffhogg86@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+          variant="outlined"
+          className={classes.btn}
+        >
+          JeffHogg86@gmail.com
+          <EmailRounded className={classes.icon} />
+        </Button>
+        <Typography className={classes.title}>
+          <h2>Send a message</h2>
+        </Typography>
         <form className="contact-form" onSubmit={sendEmail}>
           <Container className={classes.messages}>
             <div>
