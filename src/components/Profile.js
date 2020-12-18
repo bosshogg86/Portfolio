@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import moment from 'moment';
 import {
   Avatar,
   Box,
@@ -9,7 +8,6 @@ import {
   Card,
   CardContent,
   Container,
-  Divider,
   Typography,
   makeStyles,
 } from '@material-ui/core';
@@ -19,9 +17,7 @@ import { Link } from 'react-router-dom';
 const user = {
   city: 'Napa',
   state: 'CA',
-  jobTitle: 'Athlete',
   name: 'Jeff Hogg',
-  timezone: 'GTM-7',
 };
 
 const useStyles = makeStyles(() => ({
@@ -51,7 +47,7 @@ const Profile = ({ className, ...rest }) => {
           <Typography>
             <Container>
               <h3>
-                Full-Stack Developer with a background in broadcast and
+                Full stack developer with a background in broadcast and
                 communications. Recently earned a Certificate from U.C.
                 Berkeley. Technical skills include javascript, react, redux,
                 node.js, express, mongoDB and MySQL. Check out my portfolio.
