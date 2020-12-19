@@ -46,17 +46,16 @@ const Profile = ({ className, ...rest }) => {
 
           <Typography>
             <Container>
-              <ul>
-                <li>
-                  Full stack developer with a background in broadcast
-                  communications.
-                </li>
-                <li>Currently woking with the MERN stack.</li>
-                <li>
-                  Javascript, react, redux, node.js, express, mongoDB and MySQL.
-                </li>
-                <li>Check out my portfolio!</li>
-              </ul>
+              <p>
+                Full stack developer with a background in broadcast
+                communications.
+                <br />
+                Currently woking with the MERN stack.
+                <br />
+                Javascript, react, redux, node.js, express, mongoDB and MySQL.
+                <br />
+                Check out my portfolio!
+              </p>
             </Container>
           </Typography>
           <Button
