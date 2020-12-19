@@ -46,12 +46,17 @@ const Profile = ({ className, ...rest }) => {
 
           <Typography>
             <Container>
-              <h3>
-                Full stack developer with a background in broadcast and
-                communications. Recently earned a Certificate from U.C.
-                Berkeley. Technical skills include javascript, react, redux,
-                node.js, express, mongoDB and MySQL. Check out my portfolio.
-              </h3>
+              <ul>
+                <li>
+                  Full stack developer with a background in broadcast
+                  communications.
+                </li>
+                <li>Currently woking with the MERN stack.</li>
+                <li>
+                  Javascript, react, redux, node.js, express, mongoDB and MySQL.
+                </li>
+                <li>Check out my portfolio!</li>
+              </ul>
             </Container>
           </Typography>
           <Button
