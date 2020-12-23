@@ -40,6 +40,7 @@ const useStyles = makeStyles(theme => ({
       transform: 'scale(1.08)',
     },
   },
+  link: { color: 'blue' },
 }));
 
 export default function Portfolio() {
@@ -71,19 +72,21 @@ export default function Portfolio() {
               then view your progress displayed in a chart.
             </p>
             <a
+              className={classes.link}
               href="https://github.com/bosshogg86/ironDojo"
               target="_blank"
               rel="noreferrer"
             >
-              GitHub Repo - https://github.com/bosshogg86/ironDojo
+              GitHub Repo - https://github.com/bosshogg86/Iron-Dojo
             </a>
             <br></br>
             <a
-              href="https://the-iron-dojo.herokuapp.com/"
+              className={classes.link}
+              href="https://iron-dojo.herokuapp.com/"
               target="_blank"
               rel="noreferrer"
             >
-              Deployed Application - https://the-iron-dojo.herokuapp.com/
+              Deployment - https://iron-dojo.herokuapp.com/
             </a>
           </Container>
         </Grid>
@@ -96,6 +99,7 @@ export default function Portfolio() {
               corresponding trailer on a click. Deployed with firebase.
             </p>
             <a
+              className={classes.link}
               href="https://github.com/bosshogg86/netflix-clone"
               target="_blank"
               rel="noreferrer"
@@ -104,11 +108,12 @@ export default function Portfolio() {
             </a>
             <br></br>
             <a
+              className={classes.link}
               href="https://netflix-clone-23b92.web.app/"
               target="_blank"
               rel="noreferrer"
             >
-              Deployed Application - https://netflix-clone-23b92.web.app/
+              Deployment - https://netflix-clone-23b92.web.app/
             </a>
           </Container>
         </Grid>
@@ -149,6 +154,7 @@ export default function Portfolio() {
               sending messages.
             </p>
             <a
+              className={classes.link}
               href="https://github.com/bosshogg86/discord-clone"
               target="_blank"
               rel="noreferrer"
@@ -157,11 +163,12 @@ export default function Portfolio() {
             </a>
             <br></br>
             <a
+              className={classes.link}
               href="https://discord-47ed9.web.app/"
               target="_blank"
               rel="noreferrer"
             >
-              Deployed Application - https://discord-47ed9.web.app/
+              Deployment - https://discord-47ed9.web.app/
             </a>
           </Container>
         </Grid>
@@ -175,6 +182,7 @@ export default function Portfolio() {
               and 52 week low.
             </p>
             <a
+              className={classes.link}
               href="https://github.com/bosshogg86/tkrsearch"
               target="_blank"
               rel="noreferrer"
@@ -183,12 +191,12 @@ export default function Portfolio() {
             </a>
             <br></br>
             <a
+              className={classes.link}
               href="https://bhagatabhijeet.github.io/tkrsearch/index.html"
               target="_blank"
               rel="noreferrer"
             >
-              Deployed Application -
-              https://bhagatabhijeet.github.io/tkrsearch/index.html
+              Deployment - https://bhagatabhijeet.github.io/tkrsearch/index.html
             </a>
           </Container>
         </Grid>
