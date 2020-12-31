@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
       transform: 'scale(1.08)',
     },
   },
-  link: { color: 'blue' },
+  link: { color: '#4269f5' },
 }));
 
 export default function Portfolio() {
