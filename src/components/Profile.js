@@ -47,7 +47,7 @@ const Profile = ({ className, ...rest }) => {
           <Typography>
             <Container>
               <p>
-                Full stack developer with a background in broadcast
+                Web developer with a background in broadcast
                 communications.
                 <br />
                 Currently woking with the MERN stack.

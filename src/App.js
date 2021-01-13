@@ -4,7 +4,7 @@ import { CssBaseline } from "@material-ui/core";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Landing from "./components/Landing";
+import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
@@ -28,7 +28,7 @@ function App() {
           <Route path={"/projects"} component={Portfolio} />
           <Route path={"/contact"} component={Contact} />
           <Route path={"/resume"} component={Resume} />
-          <Route exact path={"/"} component={Landing} />
+          <Route exact path={"/"} component={About} />
         </Switch>
         <Footer />
       </Router>
