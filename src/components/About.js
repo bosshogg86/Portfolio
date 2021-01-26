@@ -1,7 +1,6 @@
 import React from 'react';
-import { Button, Container } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom';
 import Profile from './Profile';
 
 const useStyles = makeStyles(theme => ({
