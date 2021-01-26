@@ -47,12 +47,10 @@ const Profile = ({ className, ...rest }) => {
           <Typography>
             <Container>
               <p>
-                Full stack developer with a background in broadcast
-                communications.
+                Full-stack web developer currently working with the MERN stack.
                 <br />
-                Currently woking with the MERN stack.
-                <br />
-                Javascript, react, redux, node.js, express, mongoDB and MySQL.
+                Javascript | React | Redux | TypeScript | Node.js | Express |
+                MongoDB | MySQL.
                 <br />
                 Check out my portfolio!
               </p>
