@@ -2,18 +2,19 @@
 
 ## Introduction
 
-A portfolio built with react. Check out some examples of projects I've worked on and contact me.
+A portfolio built with react and deployed with Heroku. Check out some examples of projects I've worked on and contact me.
 
 ## Technologies
 
+- JavaScript
 - React
-- Material-UI
+- Material-Ui
 - react-pdf
 - emailjs
 
 ## Deployed
 
-[Portfolio Website](https://bosshogg86.github.io/portfolio/)
+[Portfolio Website](https://hogg-portfolio.herokuapp.com/)
 
 [GitHub Repo](https://github.com/bosshogg86/portfolio)
 
