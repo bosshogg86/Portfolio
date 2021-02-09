@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A portfolio built with react and deployed with Heroku. Check out some examples of projects I've worked on and contact me.
+A portfolio built with react and deployed with Heroku. Check out some examples of projects I've worked on and contact me!
 
 ## Technologies
 
