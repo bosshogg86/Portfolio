@@ -97,7 +97,7 @@ const Contact = () => {
           <LinkedIn className={classes.icon} />
         </Button>
         <Button
-          href="http://github.com/bosshogg86"
+          href="http://github.com/jeffhogg86"
           target="_blank"
           rel="noreferrer"
           variant="outlined"

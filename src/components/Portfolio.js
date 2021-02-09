@@ -73,11 +73,11 @@ export default function Portfolio() {
             </p>
             <a
               className={classes.link}
-              href="https://github.com/bosshogg86/ironDojo"
+              href="https://github.com/jeffhogg86/ironDojo"
               target="_blank"
               rel="noreferrer"
             >
-              GitHub Repo - https://github.com/bosshogg86/Iron-Dojo
+              GitHub Repo - https://github.com/jeffhogg86/Iron-Dojo
             </a>
             <br></br>
             <a
@@ -100,11 +100,11 @@ export default function Portfolio() {
             </p>
             <a
               className={classes.link}
-              href="https://github.com/bosshogg86/netflix-clone"
+              href="https://github.com/jeffhogg86/netflix-clone"
               target="_blank"
               rel="noreferrer"
             >
-              GitHub Repo - https://github.com/bosshogg86/netflix-clone
+              GitHub Repo - https://github.com/jeffhogg86/netflix-clone
             </a>
             <br></br>
             <a
@@ -155,11 +155,11 @@ export default function Portfolio() {
             </p>
             <a
               className={classes.link}
-              href="https://github.com/bosshogg86/discord-clone"
+              href="https://github.com/jeffhogg86/discord-clone"
               target="_blank"
               rel="noreferrer"
             >
-              GitHub Repo - https://github.com/bosshogg86/discord-clone
+              GitHub Repo - https://github.com/jeffhogg86/discord-clone
             </a>
             <br></br>
             <a
@@ -183,11 +183,11 @@ export default function Portfolio() {
             </p>
             <a
               className={classes.link}
-              href="https://github.com/bosshogg86/tkrsearch"
+              href="https://github.com/jeffhogg86/tkrsearch"
               target="_blank"
               rel="noreferrer"
             >
-              GitHub Repo - https://github.com/bosshogg86/tkrsearch
+              GitHub Repo - https://github.com/jeffhogg86/tkrsearch
             </a>
             <br></br>
             <a

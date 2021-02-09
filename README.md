@@ -16,6 +16,6 @@ A portfolio built with react and deployed with Heroku. Check out some examples o
 
 [Portfolio Website](https://hogg-portfolio.herokuapp.com/)
 
-[GitHub Repo](https://github.com/bosshogg86/portfolio)
+[GitHub Repo](https://github.com/jeffhogg86/portfolio)
 
 ![Screenshot](src/assets/portfolio-ss.png)

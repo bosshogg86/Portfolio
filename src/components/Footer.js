@@ -33,7 +33,7 @@ export default function LabelBottomNavigation() {
       >
         <LinkedIn className={icon} />
       </a>
-      <a href="http://github.com/bosshogg86" target="_blank" rel="noreferrer">
+      <a href="http://github.com/jeffhogg86" target="_blank" rel="noreferrer">
         <GitHub className={icon} />
       </a>
       <a href="mailto: jeffhogg86@gmail.com" target="_blank" rel="noreferrer">
