@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core';
 import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-const resume = require('../assets/HoggResume.pdf');
+import resume from '../assets/HoggResume.pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const useStyles = makeStyles(theme => ({
