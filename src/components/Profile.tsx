@@ -21,7 +21,6 @@ const user = {
 };
 
 const useStyles = makeStyles(() => ({
-  root: {},
   avatar: {
     height: 250,
     width: 250,
@@ -29,11 +28,11 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const Profile = ({ className, ...rest }) => {
+const Profile = () => {
   const classes = useStyles();
 
   return (
-    <Card className={clsx(classes.root, className)} {...rest}>
+    <Card>
       <CardContent>
         <Box alignItems="center" display="flex" flexDirection="column">
           <Avatar className={classes.avatar} src={avatar} />
@@ -57,7 +56,6 @@ const Profile = ({ className, ...rest }) => {
             </Container>
           </Typography>
           <Button
-            className={classes.btn}
             variant="outlined"
             component={Link}
             to={'/projects'}

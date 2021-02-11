@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core';
 import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import resume from '../assets/HoggResume.pdf';
+const resume = require('../assets/HoggResume.pdf');
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const useStyles = makeStyles(theme => ({
@@ -23,7 +23,7 @@ const Resume = () => {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
-  function onDocumentLoadSuccess({ numPages }) {
+  function onDocumentLoadSuccess({ numPages }: any) {
     setNumPages(numPages);
   }
   return (

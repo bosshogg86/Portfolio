@@ -12,7 +12,7 @@ import MuiAlert from '@material-ui/lab/Alert';
 import emailjs from 'emailjs-com';
 import { EmailRounded, GitHub, LinkedIn } from '@material-ui/icons';
 
-function Alert(props) {
+function Alert(props: any) {
   return <MuiAlert elevation={6} variant="outlined" {...props} />;
 }
 
@@ -49,7 +49,7 @@ const Contact = () => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
 
-  const handleClose = (event, reason) => {
+  const handleClose = (event: any, reason: any) => {
     if (reason === 'clickaway') {
       return;
     }
@@ -57,7 +57,7 @@ const Contact = () => {
     setOpen(false);
   };
 
-  function sendEmail(e) {
+  function sendEmail(e: any) {
     e.preventDefault();
 
     emailjs
@@ -70,9 +70,7 @@ const Contact = () => {
       .then(
         result => {
           console.log(result.text);
-          document.getElementById('user_name').value = '';
-          document.getElementById('user_email').value = '';
-          document.getElementById('message').value = '';
+    
           setOpen(true);
         },
         error => {
