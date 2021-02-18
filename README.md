@@ -7,14 +7,14 @@ A portfolio built with react and deployed with Heroku. Check out some examples o
 ## Technologies
 
 - JavaScript
+- Python
 - React
 - Material-Ui
 - react-pdf
-- emailjs
 
 ## Deployed
 
-[Portfolio Website](https://hogg-portfolio.herokuapp.com/)
+[Portfolio Website](https://www.jeffehogg.com)
 
 [GitHub Repo](https://github.com/jeffhogg86/portfolio)
 

@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hogg-portfolio.herokuapp.com/",
+  "homepage": "https://www.jeffehogg.com",
   "engines": {
     "npm": "6.14.10",
     "node": "15.5.0"

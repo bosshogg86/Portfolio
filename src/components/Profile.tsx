@@ -48,8 +48,8 @@ const Profile = () => {
               <p>
                 Full-stack web developer currently working with the MERN stack.
                 <br />
-                Javascript | React | Redux | TypeScript | Node.js | Express |
-                MongoDB | MySQL.
+                Javascript | Python | React | Redux | TypeScript | Node.js | Express |
+                MongoDB | MySQL
                 <br />
                 Check out my portfolio!
               </p>
