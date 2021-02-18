@@ -45,20 +45,16 @@ const Profile = () => {
           <Typography>
             <Container>
               <p>
-                Full-stack web developer currently working with the MERN stack.
+                Full-stack web developer currently working with:
                 <br />
-                Javascript | Python | React | Redux | TypeScript | Node.js | Express |
-                MongoDB | MySQL
+                Javascript | Python | React | Redux | TypeScript | Node.js |
+                Express | MongoDB | MySQL | Git | Heroku | AWS
                 <br />
                 Check out my portfolio!
               </p>
             </Container>
           </Typography>
-          <Button
-            variant="outlined"
-            component={Link}
-            to={'/projects'}
-          >
+          <Button variant="outlined" component={Link} to={'/portfolio'}>
             Portfolio
           </Button>
         </Box>
