@@ -6,7 +6,6 @@ import Profile from './Profile';
 const useStyles = makeStyles(theme => ({
   container: {
     marginTop: theme.spacing(8),
-    textAlign: 'center',
   },
   image: {
     width: '40%',

@@ -70,7 +70,7 @@ const Contact = () => {
       .then(
         result => {
           console.log(result.text);
-    
+
           setOpen(true);
         },
         error => {
@@ -80,94 +80,68 @@ const Contact = () => {
   }
   return (
     <Container className={classes.container}>
-      <Paper>
-        <Typography className={classes.title}>
-          <h2>Contact Me</h2>
-        </Typography>
-        <Button
-          href="http://www.linkedin.com/in/jeffhogg/"
-          target="_blank"
-          rel="noreferrer"
-          variant="outlined"
-          className={classes.btn}
-        >
-          LinkedIn
-          <LinkedIn className={classes.icon} />
-        </Button>
-        <Button
-          href="http://github.com/jeffhogg86"
-          target="_blank"
-          rel="noreferrer"
-          variant="outlined"
-          className={classes.btn}
-        >
-          GitHub
-          <GitHub className={classes.icon} />
-        </Button>
-        <Button
-          href="mailto: jeffhogg86@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-          variant="outlined"
-          className={classes.btn}
-        >
-          JeffHogg86@gmail.com
-          <EmailRounded className={classes.icon} />
-        </Button>
-        <Typography className={classes.title}>
-          <h2>Send a message</h2>
-        </Typography>
-        <form className="contact-form" onSubmit={sendEmail}>
-          <Container className={classes.messages}>
-            <div>
-              <TextField
-                className={classes.input}
-                id="user_name"
-                name="user_name"
-                label="Name"
-                variant="outlined"
-              />
-
-              <TextField
-                className={classes.input}
-                id="user_email"
-                name="user_email"
-                label="Email Address"
-                variant="outlined"
-              />
-            </div>
+      <Typography className={classes.title}>
+        <h2>Contact Me</h2>
+      </Typography>
+      <Button
+        href="mailto: jeffhogg86@gmail.com"
+        target="_blank"
+        rel="noreferrer"
+        variant="outlined"
+        className={classes.btn}
+      >
+        JeffHogg86@gmail.com
+        <EmailRounded className={classes.icon} />
+      </Button>
+      <Typography className={classes.title}>
+        <h2>Send a message</h2>
+      </Typography>
+      <form className="contact-form" onSubmit={sendEmail}>
+        <Container className={classes.messages}>
+          <div>
+            <TextField
+              className={classes.input}
+              id="user_name"
+              name="user_name"
+              label="Name"
+              variant="outlined"
+            />
 
             <TextField
               className={classes.input}
-              id="message"
-              name="message"
-              label="Message"
-              multiline
-              rows={8}
+              id="user_email"
+              name="user_email"
+              label="Email Address"
               variant="outlined"
             />
-            <div>
-              <Button
-                type="submit"
-                value="Send"
-                className={classes.btn}
-                variant="contained"
-              >
-                Submit
-              </Button>
-              <Snackbar
-                open={open}
-                autoHideDuration={6000}
-                onClose={handleClose}
-              >
-                <Alert onClose={handleClose} severity="success">
-                  Email Sent!
-                </Alert>
-              </Snackbar>
-            </div>
-          </Container>
-        </form>
-      </Paper>
+          </div>
+
+          <TextField
+            className={classes.input}
+            id="message"
+            name="message"
+            label="Message"
+            multiline
+            rows={8}
+            variant="outlined"
+          />
+          <div>
+            <Button
+              type="submit"
+              value="Send"
+              className={classes.btn}
+              variant="contained"
+            >
+              Submit
+            </Button>
+            <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+              <Alert onClose={handleClose} severity="success">
+                Email Sent!
+              </Alert>
+            </Snackbar>
+          </div>
+        </Container>
+      </form>
     </Container>
   );
 };
