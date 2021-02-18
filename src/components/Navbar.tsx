@@ -64,7 +64,7 @@ export default function MenuAppBar() {
             <Button color="inherit" component={Link} to={'/'}>
               About
             </Button>
-            <Button color="inherit" component={Link} to={'/projects'}>
+            <Button color="inherit" component={Link} to={'/portfolio'}>
               Portfolio
             </Button>
             <Button color="inherit" component={Link} to={'/contact'}>
@@ -105,7 +105,7 @@ export default function MenuAppBar() {
               <MenuItem component={Link} to={'/'} onClick={handleClose}>
                 About
               </MenuItem>
-              <MenuItem component={Link} to={'/projects'} onClick={handleClose}>
+              <MenuItem component={Link} to={'/portfolio'} onClick={handleClose}>
                 Portfolio
               </MenuItem>
               <MenuItem component={Link} to={'/contact'} onClick={handleClose}>
