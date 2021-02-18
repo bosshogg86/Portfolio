@@ -32,7 +32,7 @@ const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(4),
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
-    maxWidth: '60%',
+    maxWidth: '75%',
   },
   btn: {
     marginTop: theme.spacing(4),
